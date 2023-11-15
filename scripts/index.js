@@ -1,4 +1,5 @@
 const typedTextSpan = document.querySelector(".typed-text");
+const heroLeft = document.querySelector(".hero-left");
 const textArray = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
 const typingDelay = 200;
 const erasingDelay = 100;
@@ -8,14 +9,15 @@ let charIndex = 0;
 
 function addClassBasedOnIndex(index) {
     typedTextSpan.classList.remove("se", "de", "ux");
-
-    // Add class based on the current index
     if (index === 0) {
         typedTextSpan.classList.add("se");
+        heroLeft.classList.add("se");
     } else if (index === 1) {
         typedTextSpan.classList.add("de");
+        heroLeft.classList.add("de");
     } else if (index === 2) {
         typedTextSpan.classList.add("ux");
+        heroLeft.classList.add("ux");
     }
 }
 
