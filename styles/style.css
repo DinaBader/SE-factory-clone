@@ -388,8 +388,8 @@ h3{
     font-size: 0.8em;
 }
 
-.youtube-container{
-    background-color: #ecedf3;
+.youtube-video-content{
+    background-color: #dfdcdc;
 }
 
 iframe{
@@ -397,8 +397,8 @@ iframe{
     top:100;
     left: 0;
     height: 100%;
-    width: 90%;
-    transform: translateX(6%);
+    width: 85%;
+    transform: translateX(7%);
     border:15px solid #28eea7;
     border-radius: 10px;
 }
@@ -408,7 +408,7 @@ iframe{
     flex-direction: row;
     padding-top: 70px;
     font-weight: bold;
-    color: #313131;
+    color: #585555;
     font-size: 1.5em;
 }
 
@@ -443,4 +443,166 @@ iframe{
     border-radius: 50%;
     background-color: #28eea7;
     margin-left: 10px;
+}
+
+.milestones{
+    margin-top: 700px;
+}
+
+.milestones-head{
+    display: flex;
+}
+
+.milestones-header{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.user-info-icon{
+    font-weight: bold;
+    padding-left: 9%;
+}
+
+.first-container{
+    left: 6%;
+    position: absolute;
+    width: 38%;
+    height: 53%;
+    background-color: #ecedf3;
+    border-radius: 6%;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.milestones-employment-text-number{
+    font-size: 9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #3a3939;
+}
+
+.milestones-employment-text-under-number{
+    font-size: 2em;
+    font-weight: bold;
+    color: #3a3939;
+}
+
+.milestones-employment-small-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-container-number{
+    font-size: 4em;
+    font-weight: bold;
+    color: #3a3939;
+    padding-left: 40px;
+}
+
+.second-style-small-text{
+    padding-left: 40px;
+}
+
+.second-container{
+    background-color: #ecedf3;
+    position: absolute;
+    left: 53%;
+    width: 25%;
+    height: 30%;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.third-container{
+    position: absolute;
+    left: 80%;
+    width: 18%;
+    height: 30%;
+    background-color: #ecedf3;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+}
+
+.fourth-container{
+    position: absolute;
+    left: 53%;
+    top: 1760px;
+    background-color: #ecedf3;
+    width: 23%;
+    height: 34%;
+    border-radius: 7%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth-container{
+    left: 78%;
+    width: 20%;
+    height: 34%;
+    border-radius: 7%;
+    top:1760px;
+    position: absolute;
+    background-color: #ecedf3;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media all and (max-width: 1230px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .logo {
+        top: 80px;
+        left: 10px;
+        width: 30%;
+    }
+
+    .hero-left-h2 {
+        top: 200px;
+        left: 150px;
+        width: 35%;
+    }
+
+    .get-trained{
+        left: 170px;
+    }
+
+    .menu-container {
+        top: 0;
+        left: 0;
+    }
+
+    .toggler,
+    .hamburger {
+        top: 1rem;
+        left: 1rem;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu > div {
+        width: 90vw;
+    }
+
+    .youtube-text {
+        padding-top: 20px;
+        font-size: 1em;
+    }
+    
 }
