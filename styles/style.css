@@ -162,7 +162,7 @@ h3{
 }
 
 .menu-container{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
@@ -185,7 +185,7 @@ h3{
     width: 60px;
     height: 60px;
     border-radius: 20%;
-    background-color: rgb(56, 55, 55);
+    background-color: rgb(51, 50, 50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,9 +255,9 @@ h3{
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translateX(-10%) translateY(-50%);
-    background-color: rgba(26, 25, 25, 0.9);
-    transition: .6s;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(24, 23, 23,0.9);
+    transition: transform 0.3s ease-in;
     padding-top: 90%;
     padding-left: 30%;
 }
@@ -276,7 +276,7 @@ h3{
     text-decoration: none;
     margin: .5rem;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 550;
     color: #585555;
     transition: .3s;
@@ -290,5 +290,100 @@ h3{
     padding-bottom: 5%;
     height: auto;
     width: 20%;
+} 
+
+.heading{
+    display: flex;
+    padding-left: 25px;
+    padding-top:50px;
 }
 
+.user-info{
+    z-index: 1;
+    background-color:rgb(52, 56, 56);
+    width: 480px;
+    height: 400px;
+    border-radius: 5%;
+    transform: translate(120%, -130%);
+    font-weight:bold;
+}
+
+.user-info-icon{
+    color: #28eea7;
+    padding-right: 10px;
+    font-size: 1.6em;
+}
+
+.user-info-header{
+    color: white;
+    font-size: 1.6em;
+}
+
+.user{
+    padding-left: 28px;
+    padding-top: 20px;
+    font-size: 1.1em;
+}
+
+.user-email{
+    padding-top: 10px;
+}
+
+.user-email,.user-id{
+    font-size:small;
+    color: #c2bfbf;
+    font-weight:100;
+}
+
+.user-name{
+    color: white;
+}
+
+.buttons{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.my-account-button{
+    background-color: #28eea7;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    color:rgb(37, 37, 37);
+}
+
+.log-out-button{
+    background-color: #fb4747;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    color: white;
+}
+
+.hr-container{
+    margin-top: 70px;
+    padding: 10px;
+    background-color: #31b7f0;
+    border-radius: 20px;
+}
+
+.hr-text{
+    transform: translate(25%,-230%);
+    color: white;
+    font-weight: bold;
+}
+
+.small-text{
+    transform: translate(25%,-470%);
+    font-weight: 100;
+    color: white;
+    font-size: 0.8em;
+}
