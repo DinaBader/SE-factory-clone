@@ -29,7 +29,7 @@ img {
     width: 30%;
 }
 
-.menu-bar {
+/* .menu-bar {
     position: absolute;
     top: 80px; 
     right: 55px; 
@@ -39,7 +39,7 @@ img {
     border-radius: 20%;
     cursor: pointer;
     z-index: 1;
-}
+} */
 
 img .menu-bar{
     cursor: pointer;
@@ -159,5 +159,136 @@ h3{
     0% { background-color: black;}
     50% {background-color: white;}
     100%{background-color: black;}
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.toggler{
+    position: absolute;
+    top: 5rem;
+    left: 73rem;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.hamburger{
+    position: absolute;
+    top: 5rem;
+    left: 73rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.hamburger>div{
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: white;
+}
+
+.hamburger>div:before, .hamburger>div:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: white;
+}
+
+.hamburger>div:before{
+    top:-10px;
+}
+
+.hamburger>div:after{
+    top:10px;
+}
+
+.toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+
+.toggler:checked + .hamburger>div:after, .toggler:checked + .hamburger>div:before{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.toggler:checked ~ .menu{
+    visibility: visible;
+}
+
+.toggler:checked ~.menu>div{
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~.menu>div>div{
+    opacity: 1;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu > div{
+    width:1600px;
+    height: 1600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-10%) translateY(-50%);
+    background-color: rgba(26, 25, 25, 0.9);
+    transition: .6s;
+    padding-top: 90%;
+    padding-left: 30%;
+}
+
+.menu>div>div{
+    max-width: 70vw;
+    max-height: 100vh;
+    opacity: 0;
+}
+
+.menu>div>div>ul>li{
+    list-style: none;
+}
+
+.menu>div>div>ul>li>a{
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #585555;
+    transition: .3s;
+}
+
+.menu>div>div>ul>li>a:hover{
+    color:white;
+}
+
+.menu-logo{
+    padding-bottom: 5%;
+    height: auto;
+    width: 20%;
 }
 
