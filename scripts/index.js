@@ -8,6 +8,8 @@ const erasingDelay = 100;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
+var btn=document.getElementsByClassName("btn");
+var slide=document.getElementById("slide");
 
 function addClassBasedOnIndex(index) {
     typedTextSpan.classList.remove("se", "de", "ux");
@@ -63,3 +65,16 @@ tabs.forEach((tab,index)=>{
         tabs[index].classList.add("active");
     })
 })
+
+btn[0].onclick=function(){
+    slide.style.transform="translateX(0px)";
+}
+btn[1].onclick=function(){
+    slide.style.transform="translateX(-1230px)";
+}
+btn[2].onclick=function(){
+    slide.style.transform="translateX(-2400px)";
+}
+btn[3].onclick=function(){
+    slide.style.transform="translateX(-3600px)";
+}

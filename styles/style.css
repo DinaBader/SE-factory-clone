@@ -820,7 +820,7 @@ h3{
     display: flex;
     flex-direction: column;
     background-color: #3a3939;
-    width: 1050px;
+    width: 1000px;
     height: 380px;
     margin-left: 90px;
     border-radius: 20px;
@@ -840,6 +840,14 @@ h3{
     height: 330px;
     margin-left: 650px;
     margin-top: -180px;
+    border-radius: 20px;
+}
+
+.rabih-normal{
+    width: 330px;
+    height: 330px;
+    margin-left: 650px;
+    margin-top: -150px;
     border-radius: 20px;
 }
 
@@ -867,7 +875,69 @@ h3{
     color: #28eea7;
 }
 
+.design-geek{
+    margin-left: 190px;
+    margin-top: -38px;
+    color: #28eea7;
 
+}
+
+.design-nadeera{
+    margin-left: 150px;
+    margin-top: -38px;
+    color: #28eea7;
+
+}
+
+.slide-row{
+    display: flex;
+    width: 5000px;
+    transition: 1s;
+}
+
+.slide-col{
+    flex: 0 0 auto;
+    width: 800px;
+    height: 400px;
+    position:relative;
+    margin-right: 400px;
+}
+
+.indicator{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background:#585555;
+    cursor: pointer;
+
+}
+
+.testimonial{
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.active{
+    color: #1d1d1d;
+}
+
+.circles{
+    display: flex;
+    margin-left: 150px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    
+}
 
 @media all and (max-width: 1230px) {
     .hero {
