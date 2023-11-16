@@ -65,7 +65,7 @@ h2{
     padding: 3px;
 }
 
-h3{
+.job-ready{
     position: absolute;
     top:255px;
     left: 50px;
@@ -429,6 +429,14 @@ iframe{
     margin-left: 850px;
 }
 
+.circle-white{
+    width: 22px; 
+    height: 22px; 
+    background-color: white; 
+    border-radius: 50%; 
+    margin-left: 850px;
+}
+
 .circle-gray{
     width: 22px;
     height: 22px;
@@ -560,6 +568,224 @@ iframe{
     align-items: left;
     flex-direction: column;
     justify-content: center;
+}
+
+.programs{
+    position: absolute;
+    top: 2100px;
+}
+
+.programs-head{
+    position: absolute;
+    left: 80px;
+    width:180px;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: #3a3939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 190vmin;
+    height: 290px;
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+h3{
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab-content{
+    background-color: #3a3939;
+    padding: 5px 40px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.tab-content .first-part{
+    color: #ffc635;
+}
+
+.tab-content .second-part{
+    color: white;
+    word-spacing: -10px;
+}
+
+.tab-content p{
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+    color: #aaa5a5;
+    font-weight: bold;
+}
+
+.tab-content div{
+    display: none;
+}
+
+.tab-content .active{
+    display: block;
+}
+
+.tabs .active{
+    background-color: #3a3939;
+
+}
+
+.fcs-picture{
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(60%, -20%); 
+    width: 350px;
+    object-fit: contain;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.first-button{
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.active .lower-text-container{
+    background-color:#1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 1px;
+    font-size:14px;
+}
+
+.active .lower-text-second-container{
+    background-color:#1d1d1d;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    width: 25%;
+    margin-top: 1.8%;
+    left: 35%;
+    top: 424px;
+    padding: 1px;
+    font-size:14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.hire-talent-container{
+    position: absolute;
+    top: 2800px;
+    background-color: #2e2d2d;
+    width:100%;
+}
+
+.hire-talent-text{
+    display: flex;
+    padding: 40px 0px;
+    align-items: baseline;
+}
+
+.hire-talent-text-header{
+    color: white;
+    font-weight: bold;
+    width: 15pc;
+    font-size: 30px;
+    padding-left: 1%;
+}
+
+.become-a-recruitment-container{
+    background-color:#1f1e1e ;
+    width: 80%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    border-radius: 20px;
+}
+
+.become-partner-head{
+    color: white;
+    display: flex;
+    font-weight: bold;
+}
+
+.become-partner-info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #363738;
+    width: 70%;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+}
+.become-partner-numbers,.under-partner-numbers{
+    color: #bdb5b5;
+    font-size: .9em;
+    font-weight: bold;
+}
+.color-text{
+    color: #28eea7;
+}
+
+.become-partner-bottom{
+    background-color: #363738;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 95%;
+}
+
+.become-partner-bottom p{
+    right: 100px;
+    padding-left: 85%;
+}
+
+.become-partner-launch{
+    display: flex;
+    background-color: #1f1e1e;
+    margin-top: 3%;
+    width: 48%;
+    margin-left:80px ;
+    border-radius: 15px;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    padding: 17px;
+    padding-left: 35%;
+}
+
+.become-partner-picture{
+    width: 20%;
+    height: 20%;
+}
+
+.position-circle{
+    display: flex;
 }
 
 @media all and (max-width: 1230px) {

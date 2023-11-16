@@ -1,6 +1,8 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const heroLeft = document.querySelector(".hero-left");
 const textArray = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+let tabs=document.querySelectorAll(".tabs h3");
+let tabContents=document.querySelectorAll(".tab-content div");
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
@@ -48,3 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
     addClassBasedOnIndex(textArrayIndex);
     setTimeout(type, newTextDelay + 250);
 });
+
+tabs.forEach((tab,index)=>{
+    tab.addEventListener("click",()=>{
+        tabContents.forEach(content=>{
+            content.classList.remove("active");
+        });
+        tabs.forEach(tab=>{
+            tab.classList.remove("active");
+        });
+        tabContents[index].classList.add("active");
+        tabs[index].classList.add("active");
+    })
+})
