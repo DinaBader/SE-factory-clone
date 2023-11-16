@@ -777,6 +777,7 @@ h3{
     font-size: 1.2em;
     padding: 17px;
     padding-left: 35%;
+    margin-bottom: 50px;
 }
 
 .become-partner-picture{
@@ -787,6 +788,86 @@ h3{
 .position-circle{
     display: flex;
 }
+
+.testimonial-container{
+    position: absolute;
+    top: 3600px;
+}
+
+.testimonial-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    font-size: 25px;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+.quotes-image{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.testimonial-box-text{
+    color: #e9e3e3;
+    font-weight: bold;
+}
+
+.testimonial-box{
+    padding-left:30px ;
+    display: flex;
+    flex-direction: column;
+    background-color: #3a3939;
+    width: 1050px;
+    height: 380px;
+    margin-left: 90px;
+    border-radius: 20px;
+}
+
+.user-information{
+    display: flex;
+    align-items: center;
+}
+
+.smaller-picture{
+    margin-right: 20px;
+}
+
+.zeina-normal{
+    width: 330px;
+    height: 330px;
+    margin-left: 650px;
+    margin-top: -180px;
+    border-radius: 20px;
+}
+
+.zeina-round{
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    margin-top: -130px;
+}
+
+.smaller-picture p{
+    color:white;
+    margin-left: 90px;
+    margin-top: -10px;
+}
+
+.user-info-text{
+    margin-top: -45px;
+    font-weight: bold;
+}
+
+.design{
+    margin-left: 325px;
+    margin-top: -38px;
+    color: #28eea7;
+}
+
+
 
 @media all and (max-width: 1230px) {
     .hero {
