@@ -1031,6 +1031,65 @@ h3{
     text-transform: uppercase;
 }
 
+.contact-us{
+    position: absolute;
+    top: 2396px;
+    background-color: #28eea7;
+    width: 100%;
+}
+
+.contact-us-header{
+    display: flex;
+    align-items: baseline;
+    background-color: #363738;
+    margin: 52px;
+    width: 200px;
+    padding: 2px;
+}
+
+.contact-us-left-container{
+    background-color:#363738;
+    width: 220px;
+    height: 500px;
+    margin: 52px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.map{
+    width: 20%;
+    height: 32%;
+    left: 5%;
+    bottom: 38%;
+}
+
+.contact-us-left-container-header{
+    color: #a5a0a0;
+    font-weight: bold;
+}
+
+.contact-us-left-container-bottom-text{
+    margin-top: 100%;
+    font-size: .9em;
+}
+
+.first-text{
+    color: white;
+    font-weight: bold;
+}
+
+.second-text{
+    color: #a5a0a0;
+}
+
+.header-text{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 @media all and (max-width: 1230px) {
     .hero {
         flex-direction: column;
