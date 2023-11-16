@@ -3,13 +3,13 @@ const heroLeft = document.querySelector(".hero-left");
 const textArray = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
 let tabs=document.querySelectorAll(".tabs h3");
 let tabContents=document.querySelectorAll(".tab-content div");
+const btn=document.getElementsByClassName("btn");
+const slide=document.getElementById("slide");
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
-var btn=document.getElementsByClassName("btn");
-var slide=document.getElementById("slide");
 
 function addClassBasedOnIndex(index) {
     typedTextSpan.classList.remove("se", "de", "ux");
@@ -70,11 +70,21 @@ btn[0].onclick=function(){
     slide.style.transform="translateX(0px)";
 }
 btn[1].onclick=function(){
-    slide.style.transform="translateX(-1230px)";
+    slide.style.transform="translateX(-1220px)";
 }
 btn[2].onclick=function(){
     slide.style.transform="translateX(-2400px)";
 }
 btn[3].onclick=function(){
     slide.style.transform="translateX(-3600px)";
+}
+
+function toggleAnswer(faqItem) {
+    const answer = faqItem.querySelector('.answer');
+
+    if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+    } else {
+        answer.style.display = 'block';
+    }
 }
