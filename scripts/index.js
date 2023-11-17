@@ -9,13 +9,13 @@ const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
+
 function addClassBasedOnIndex(index) {
     typedTextSpan.classList.remove("se", "de", "ux");
     heroLeft.classList.remove("se", "de", "ux"); 
     if (index === 0) {
         typedTextSpan.classList.add("se");
         heroLeft.style.backgroundColor="rgba(251, 80, 142, 0.93)";
-        heroLeft.style.zIndex="2"
     } else if (index === 1) {
         typedTextSpan.classList.add("de");
         heroLeft.style.backgroundColor="#1d1d1d";

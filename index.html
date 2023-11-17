@@ -52,7 +52,7 @@
                     <div>
                         <ul>
                             <img src="./assets/63e3c538627455556c58db15_Property 1=logo_text.svg" alt="menu-logo" class="menu-logo">
-                            <li class="first"><a href="">Home</a> </li>
+                            <li class="first"> <span class="first"><a href="">Home</a></span> </li>
                             <li><a href=""> Hello World!</a></li>
                             <li><a href=""> Milestiones</a></li>
                             <li><a href="">Programs</a> </li>
@@ -148,109 +148,42 @@
         </div>
     </div>
 
-    <!-- <section class="programms">
-        <div class="container">
-            <div class="tabs-btn">
-                <ul>
-                    <li for="fcs">FCS</li>
-                    <li for="fsw">FSW</li>
-                    <li for="fsd">FSD</li>
-                    <li for="uix">UIX</li>
-                </ul>
-            </div>
-            <div class="tabs-content">
-                <ul>
-                    <li class="fcs active">
-                        <div class="fcs-header">
-                            <div class="fcs-design">> FCS:</div>
-                            <div class="fcs-normal">Foundations of Computer Science</div>
-                        </div>
-                        <div class="fcs-text">
-                            <p>// This 9-week course covers fundamental topics in computer science, <br>
-                                including data structures, algorithms, and foundational concepts. It is <br>
-                                suitable for coding enthusiasts, former computer science students, and <br>
-                                beginners who wish to learn Python programming, object-oriented <br>
-                                programming, file systems, and more. The course includes online video <br>
-                                materials, assignments, and instructor-led sessions.</p>
-                                <img src="./assets/fcs.png" alt="fcs">
-                        </div>
-                        <div class="fcs-buttons">
-                            <div class="first-button">next course date | <div class="fcs-button-design"> To be confirmed</div> </div> 
-                            <div class="second-part">LEARN MORE ></div>
-                        </div>
-                    </li>
-                    <li class="fsw">
-                        <div class="fsw-header">
-                            <div class="fsw-design">> FSW:</div>
-                            <div class="fsw-normal">Full-Stack Web Development</div>
-                        </div>
-                        <div class="fsw-text">
-                            <p>// Our 14-week bootcamp is designed to equip aspiring developers with the <br>
-                                technical and interpersonal skills needed to become professional software <br>
-                                engineers. Participants will learn essential concepts such as Version <br>
-                                Control, Object-Oriented Programming, Database Management Systems, MVC <br>
-                                Design Patterns, Dependency Management, modern Web Frameworks, and AWS. The <br>
-                                program also includes a soft-skills curriculum covering Communication & <br>
-                                Interpersonal Skills, Professional Writing, Technical Presentations, <br>
-                                Negotiation, and Interviewing, which will be taught through lectures, <br>
-                                weekly projects, tech talks, and a final project to showcase their <br>
-                                learning.</p>
-                                <img src="./assets/fsw.png" alt="fsw">
-                        </div>
-                        <div class="fsw-buttons">
-                            <div class="first-button">next course date | <div class="fsw-button-design"> To be confirmed</div> </div> 
-                            <div class="second-part">LEARN MORE ></div>
-                        </div>
-                    </li>
-                    <li class="fsd">
-                        <div class="fsd-header">
-                            <div class="fsd-design">> FSD:</div>
-                            <div class="fsd-normal">Full-Stack Data</div>
-                        </div>
-                        <div class="fsd-text">
-                            <p>// SE Factory's 12-week Full-Stack Data course offers robust training in <br>
-                            data analysis and engineering. Participants learn to handle large data sets <br>
-                            with Python and use libraries like Pandas, NumPy, and Matplotlib for data <br>
-                            manipulation and visualization. The course also delves into cloud <br>
-                            orchestration, distributed computing, relational databases, and SQL basics. <br>
-                            Hands-on projects provide real-world data analysis experience. Upon<br>
-                            completion, students gain proficiency in Python for analytics, understand <br>
-                            data warehousing, and can effectively visualize and present data insights. <br>
-                            </p>
-                            <img src="./assets/fsd.png" alt="fsd">
-                        </div>
-                    <div class="fsw-buttons">
-                        <div class="first-button">next course date | <div class="fsw-button-design"> To be confirmed</div> </div> 
-                        <div class="second-part">LEARN MORE ></div>
-                    </div>
-                    </li>
-                    <li class="uix">
-                        <div class="uix-header">
-                            <div class="uix-design">> UIX:</div>
-                            <div class="uix-normal">UI/UX Design Bootcamp</div>
-                        </div>
-                        <div class="uix-text">
-                            <p>// SE Factory's 6-week UI/UX course offers immersive learning in UI/UX <br>
-                            design. It encompasses the essentials of UI/UX, from mastering Figma, color <br>
-                            psychology, typography to UX heuristics, prototyping and WCAG guidelines.<br>
-                            Learners work on projects, transforming wireframes into mockups, and <br>
-                            creating responsive interfaces. The course culminates in a final project, <br>
-                            enabling students to conduct a thorough UX audit, revamp a website, and<br>
-                            create a well-documented case study. Graduates leave equipped with a<br>
-                            polished portfolio and market-ready skills in UI/UX design. <br>
-                            </p>
-                            <img src="./assets/uix.png" alt="uix">
-                        </div>
-                    <div class="uix-buttons">
-                        <div class="first-button">next course date | <div class="uix-button-design"> To be confirmed</div> </div> 
-                        <div class="second-part">LEARN MORE ></div>
-                    </div>
-                    </li>
-                </ul>
-            </div>
+    <section class="programs">
+        <div class="programs-header">
+            <span class="user-info-icon">></span> Programs
         </div>
-    </section> -->
-    
+        <!-- tab bar -->
+        <div class="tabs">
+            <a >FCS</a>
+            <a >FSW</a>
+            <a >FSD</a>
+            <a >UIX</a>
+        </div>
+        <!-- FCS -->
+        <div class="title">
+            <span class="fcs-header"><span class="fcs-title">>FCS:</span>Foundations of Computer Science</span>
+            <p>
+                // This 9-week course covers fundamental topics in computer <br>
+                  science, including data structures, algorithms, and <br>
+                  foundational concepts. It is suitable for coding enthusiasts, <br>
+                  former computer science students, and beginners who wish to <br>
+                  learn Python programming, object-oriented programming, file <br>
+                  systems, and more. The course includes online video materials, <br>
+                  assignments, and instructor-led sessions.
+            </p>
+            <img src="./Assets/fcs.png" alt="fcs bootcamp" />
+        </div>
+        <div class="program-info-container">
+            <div class="program-info">
+                <span class="program-info-span">next course date</span>
+                <span class="program-info-span">|</span>
+                <span class="fcs-confirmation">To be confirmed</span>
+                <a class="program-learn-more">LEARN MORE ></a>
+            </div>
+            
+        </div>
+    </section>
+   
     <section class="hire">
         <div class="hire-talent-container" id="hire">
             <div class="hire-talent-text">

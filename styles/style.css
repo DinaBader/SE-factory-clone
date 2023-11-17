@@ -280,6 +280,16 @@ h2{
     transition: .3s;
 }
 
+.first{
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 550;
+    color: #28eea7;
+    transition: .3s;
+}
+
 .menu>div>div>ul>li>a:hover{
     color:white;
 }
@@ -578,7 +588,7 @@ iframe{
 
 .hire-talent-container{
     position: absolute;
-    top: 2800px;
+    top: 2670px;
     background-color: #2e2d2d;
     width:100%;
 }
@@ -672,7 +682,7 @@ iframe{
 
 .testimonial-container{
     position: absolute;
-    top: 3600px;
+    top: 3500px;
 }
 
 .testimonial-header{
@@ -919,7 +929,7 @@ iframe{
 
 .contact-us{
     position: absolute;
-    top: 2396px;
+    top: 2389px;
     background-color: #28eea7;
     width: 100%;
 }
@@ -1214,6 +1224,70 @@ a{
 .footer-policy:hover{
     color: white;
     cursor: pointer;
+}
+
+
+.programs{
+    position: absolute;
+    top: 2010px;
+    background-color: #ffc635;
+    width: 100%;
+}
+
+.programs-header{
+    font-weight: bold;
+    width: 180px;
+    margin: 50px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    background-color: #333;
+    color: white;
+}
+
+.tabs{
+    display: flex;
+    margin-top: 60px;
+    margin-right: 200px;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.title img{
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.title{
+    margin-left: 100px;
+    display: flex;
+    background-color: #363738;
+    width:1100px;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+}
+
+.title span{
+    font-weight: bold;
+}
+
+.fcs-title{
+    font-weight: bold;
+    color: #ffc635;
+    margin-left: 50px;
+}
+
+.fcs-header{
+    display: flex;
+    margin-top:50px;
+}
+
+.title p{
+    padding-top: 80px;
+    
 }
 
 @media all and (max-width: 1230px) {
