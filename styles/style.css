@@ -1269,7 +1269,8 @@ a{
     height: 400px;
 }
 
-.title{
+.fcs-text-and-images{
+    margin-top: -60px;
     margin-left: 100px;
     display: flex;
     background-color: #363738;

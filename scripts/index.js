@@ -104,4 +104,17 @@ function showContent(program) {
 
     const selectedProgram = document.getElementById(program);
     selectedProgram.classList.remove('hidden');
+    document.body.style.backgroundColor = getBackgroundColor(program);
+
 }
+
+// function getBackgroundColor(program) {
+//     switch (program) {
+//         case 'fcs':
+//             return '#f5f5f5';
+//         case 'fsw':
+//             return '#e0e0e0';
+//         default:
+//             return '#ffffff'; 
+//     }
+// }
