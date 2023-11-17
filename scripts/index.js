@@ -1,8 +1,6 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const heroLeft = document.querySelector(".hero-left");
 const textArray = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
-let tabs=document.querySelectorAll(".tabs h3");
-let tabContents=document.querySelectorAll(".tab-content div");
 const btn=document.getElementsByClassName("btn");
 const slide=document.getElementById("slide");
 const typingDelay = 200;
@@ -13,17 +11,20 @@ let charIndex = 0;
 
 function addClassBasedOnIndex(index) {
     typedTextSpan.classList.remove("se", "de", "ux");
+    heroLeft.classList.remove("se", "de", "ux"); 
     if (index === 0) {
         typedTextSpan.classList.add("se");
-        heroLeft.classList.add("se");
+        heroLeft.style.backgroundColor="rgba(251, 80, 142, 0.93)";
+        heroLeft.style.zIndex="2"
     } else if (index === 1) {
         typedTextSpan.classList.add("de");
-        heroLeft.classList.add("de");
+        heroLeft.style.backgroundColor="#1d1d1d";
     } else if (index === 2) {
         typedTextSpan.classList.add("ux");
-        heroLeft.classList.add("ux");
+        heroLeft.style.backgroundColor="#c2bfbf";
     }
 }
+
 
 function type() {
     if (charIndex < textArray[textArrayIndex].length) {
@@ -53,18 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type, newTextDelay + 250);
 });
 
-tabs.forEach((tab,index)=>{
-    tab.addEventListener("click",()=>{
-        tabContents.forEach(content=>{
-            content.classList.remove("active");
-        });
-        tabs.forEach(tab=>{
-            tab.classList.remove("active");
-        });
-        tabContents[index].classList.add("active");
-        tabs[index].classList.add("active");
-    })
-})
 
 btn[0].onclick=function(){
     slide.style.transform="translateX(0px)";
