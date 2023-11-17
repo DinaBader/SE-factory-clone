@@ -1234,8 +1234,13 @@ a{
 .programs{
     position: absolute;
     top: 2010px;
+    padding-bottom: 20px;
     background-color: #ffc635;
     width: 100%;
+}
+
+.fcs-header{
+    color: white;
 }
 
 .programs-header{
