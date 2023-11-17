@@ -1106,7 +1106,42 @@ iframe{
     margin: 50%;
 }
 
+.news-letter-container{
+    display: flex;
+    position: absolute;
+    top: 6100px;
+    background-color: #3a3939;
+    width: 92%;
+    padding: 50px;
+    justify-content: space-between;
+}
 
+.news-letter-small-text{
+    color: #a09d9d;
+    font-size: .9em;
+}
+
+.news-letter-big-text{
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.news-letter-email{
+    height: 30px;
+    background-color: #fff;
+    border: .5px solid #ccc;
+}
+
+.subscribe{
+    height: 35px;
+    background-color: #1f1e1e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: .9em;
+}
 
 @media all and (max-width: 1230px) {
     .hero {
