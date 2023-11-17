@@ -138,6 +138,10 @@ h2{
     color: #28eea7;
 }
 
+.overlay-left{
+    z-index: 2;
+}
+
 .hero-left .color-overlay .de{
     background-color: #1d1d1d;
 }

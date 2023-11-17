@@ -8,6 +8,8 @@ const erasingDelay = 100;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
+let currentIndex = 0;
+const slideInterval = 5000;
 
 
 function addClassBasedOnIndex(index) {
@@ -66,6 +68,21 @@ btn[2].onclick=function(){
 }
 btn[3].onclick=function(){
     slide.style.transform="translateX(-3600px)";
+}
+
+
+function changeSlide() {
+    currentIndex = (currentIndex + 1) % 4;
+    const newPosition = -currentIndex * 1220;
+    slide.style.transform = `translateX(${newPosition}px)`;
+}
+
+const intervalId = setInterval(changeSlide, slideInterval);
+
+for (let i = 0; i < btn.length; i++) {
+    btn[i].onclick = function () {
+        clearInterval(intervalId);
+    };
 }
 
 function toggleAnswer(faqItem) {
