@@ -70,7 +70,6 @@ btn[3].onclick=function(){
     slide.style.transform="translateX(-3600px)";
 }
 
-
 function changeSlide() {
     currentIndex = (currentIndex + 1) % 4;
     const newPosition = -currentIndex * 1220;
@@ -93,4 +92,16 @@ function toggleAnswer(faqItem) {
     } else {
         answer.style.display = 'block';
     }
+}
+
+function showContent(program) {
+    const allPrograms = document.querySelectorAll('.title');
+    event.preventDefault();
+
+    allPrograms.forEach((p) => {
+        p.classList.add('hidden');
+    });
+
+    const selectedProgram = document.getElementById(program);
+    selectedProgram.classList.remove('hidden');
 }

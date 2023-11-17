@@ -1250,12 +1250,17 @@ a{
     color: white;
 }
 
+.title.hidden{
+    display: none;
+}
+
 .tabs{
     display: flex;
     margin-top: 60px;
     margin-right: 200px;
     justify-content: space-evenly;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .title img{
